@@ -1,0 +1,105 @@
+@font-face {
+  font-family: CursedTimerUlil;
+  src: url("CursedTimerUlil-Aznm.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+body {
+  font-family: sans-serif, system-ui;
+}
+
+.container {
+  background-color: #1b244a;
+  width: 575px;
+  height: 385px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.team {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-score,
+.guest-score {
+  width: 155px;
+  height: 120px;
+  background-color: #222;
+  color: #f94f6d;
+  text-align: center;
+  font-size: 100px;
+  padding-top: 15px;
+  font-family: CursedTimerUlil;
+  margin-bottom: 20px;
+}
+
+.team-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-btn button {
+  width: 45px;
+  padding: 10px;
+  font-family: CursedTimerUlil;
+  background-color: #1b244a;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}

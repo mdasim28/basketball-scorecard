@@ -1,0 +1,34 @@
+"use strict";
+
+const homeScore = document.querySelectorAll(".home-score");
+const guestScore = document.querySelectorAll(".guest-score");
+
+const homeGain1 = document.getElementsByClassName("home-gain_1");
+const homeGain2 = document.getElementsByClassName("home-gain_2");
+const homeGain3 = document.getElementsByClassName("home-gain_3");
+
+const guestGain1 = document.getElementsByClassName("guest-gain_1");
+const guestGain2 = document.getElementsByClassName("guest-gain_2");
+const guestGain3 = document.getElementsByClassName("guest-gain_3");
+
+let sumOfHomeScore = 0;
+
+function updateHomeScore(increment) {
+  sumOfHomeScore += increment;
+  homeScore[0].textContent = sumOfHomeScore;
+}
+
+homeGain1[0].addEventListener("click", () => updateHomeScore(1));
+homeGain2[0].addEventListener("click", () => updateHomeScore(2));
+homeGain3[0].addEventListener("click", () => updateHomeScore(3));
+
+let sumOfGuestScore = 0;
+
+function updateGuestScore(increment) {
+  sumOfGuestScore += increment;
+  guestScore[0].textContent = sumOfGuestScore;
+}
+
+guestGain1[0].addEventListener("click", () => updateGuestScore(1));
+guestGain2[0].addEventListener("click", () => updateGuestScore(2));
+guestGain3[0].addEventListener("click", () => updateGuestScore(3));
